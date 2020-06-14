@@ -1,0 +1,33 @@
+body{
+	background:#282A36;
+
+    }
+
+.nav{	
+	float: right;
+	color: white;
+	margin-right: 3vw;
+	margin-top: 2vw;
+	}
+
+.dropdown-content{
+		display: none;
+		position: absolute;
+		background-color: rgb(70, 72, 82);
+		border-radius: 2rem;
+		min-width:20vw
+		margin-right: 2vw;
+		
+		
+	}	
+
+.nav:hover .dropdown-content{
+	display: grid;
+}	
+
+.grid{
+	grid:2/2;
+}
+.ul{
+	list-style: none;
+}
