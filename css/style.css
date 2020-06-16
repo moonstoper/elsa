@@ -1,33 +1,144 @@
 body{
-	background:#282A36;
-
-    }
-
-.nav{	
-	float: right;
-	color: white;
-	margin-right: 3vw;
-	margin-top: 2vw;
-	}
-
-.dropdown-content{
-		display: none;
-		position: absolute;
-		background-color: rgb(70, 72, 82);
-		border-radius: 2rem;
-		min-width:20vw
-		margin-right: 2vw;
-		
-		
-	}	
-
-.nav:hover .dropdown-content{
-	display: grid;
-}	
-
-.grid{
-	grid:2/2;
+    background-color: black;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    
 }
-.ul{
-	list-style: none;
+::selection{
+    background-color:yellow;
+}
+@font-face{
+    font-family: Poppins;
+    src:url(../fonts/Poppins-Bold.ttf);
+}
+.container{
+    overflow: visible;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-weight: 500;
+    z-index: -2;
+    display: block;
+    float:right;
+    margin:0px;
+    position:0px 0px;
+    
+   
+    
+    
+}
+
+.nav_item{
+    color:white;
+    float:right;
+    padding:1rem 2rem 1rem;
+    cursor: pointer;
+    height: 10vh;
+    width: 10vh;
+    text-align: right;
+    border-bottom-left-radius: 100%;
+    background: black;
+    transition: 1s;
+}
+.list{
+    display:none;
+    margin-left:-2rem;
+    position: relative;
+    text-align: right;
+    padding: .3rem;
+
+}
+.nav_item:hover {
+   background: white;
+   color: black;
+   height: 30vh;
+   width: 30vh;
+}
+.nav_item:hover .list{
+    display:block;
+    
+
+
+}
+@keyframes anim{
+    to{
+        color: white;
+        
+        
+    }
+    from{
+       color: aquamarine;
+        
+        
+    }
+}
+
+
+.list .a{
+    
+     grid-row: row 2px;
+}
+.section-quotes{
+    padding-top: 20vh;
+    margin: auto;
+    max-width: 30vw;
+    text-align: left;
+    overflow-wrap: break-word;
+    font-family:Poppins;
+    font-size:3rem;
+    
+}
+.author{
+    font-size: medium;
+    overflow: visible;
+    font-style: italic;
+    margin-top: 10%;
+    
+}
+
+.search{
+    align-items: center;
+    margin: auto;
+    margin-left: 10vw;
+    padding-top: 20vh ;
+    text-align: center;
+}
+.search .header{
+    text-align: center;
+    font-family: Poppins;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    width:30vw;
+    height: 7vh;
+    font-weight: 600;
+    border: 6px solid white;
+    border-spacing: 1rem;
+    font-size: medium;
+   
+}
+
+button{
+    margin: auto;
+    height: 7vh;
+    margin-left:-20%;
+    margin-top: -2%;
+    width: 5vw;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+    text-emphasis: none;
+    cursor: pointer;
+    color: #555;
+}
+
+input:active{
+    border-style: none;
 }
