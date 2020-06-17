@@ -4,14 +4,26 @@
 <head>
 
 <link rel="stylesheet" href="css/style.css"/>
+<script src="./js/mouse.js"></script>
+<!--[if IE]>
+<style>
+    .body {
+         cursor:pointer !important;
+    }
+</style>
+<![endif]-->
 </head>
 <body>
+    <div class="cursor"><script src="./js/mouse.js"></script></div>
 <div class="container">
     
     <nav class="nav_item">User
         <div class="list">
-            <a>Hi</a>
+            <a></a>
+            <a>hellodfsghjgfdfg</a>
+            <a>Hello</a>
             <a>hello</a>
+            <a>Hello</a>
         </div>
     </nav>
 
@@ -23,7 +35,8 @@
 </div>
 <div class="search">
     <div class="header"><script src="./js/header.js"></script></div>
-    <input placeholder="Search..." class="form-input" />
+    <form action="https://www.google.com/search"  method="GET">
+    <input placeholder="Search..." class="form-input" name="q"/><button type="submit" class="btn"></button></form>
 </div>
 </div>
 </body>
