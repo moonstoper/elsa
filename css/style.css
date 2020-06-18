@@ -1,6 +1,3 @@
-*{
-    cursor: none;
-}
 
 body {
     background-color: black;
@@ -8,6 +5,7 @@ body {
     cursor: none;
     margin: 0px;
     overflow: hidden;
+    height: 100vh;
 }
 
 ::selection {
@@ -141,7 +139,7 @@ a:hover::before{
 }
 
 .author {
-    font-size: medium;
+    font-size:large;
     overflow: visible;
     font-style: italic;
     margin-top: 10%;
@@ -202,6 +200,10 @@ a:hover::before{
         width: 70vw !important;
         
     }
+   .nav_item:hover .section-quotes{
+       margin-left: 50rem;
+   }
+   
 }
 
 input {

@@ -8,9 +8,9 @@
 
     },
     "icons":{
-        "48":"icons/ICON-48.png"
+        "200":"icons/ICON-48.png"
     },
     "chrome_url_overrides":{
-        "new_tab":"index.html"
+        "newtab":"index.html"
     }
 }

@@ -16,3 +16,26 @@ Screenshot1
 Screenshot2
 ![FireShot Capture 006 - Home - 127 0 0 1](https://user-images.githubusercontent.com/53539666/84965591-ed87d180-b12c-11ea-8136-75b06f6ef42e.png)
 
+##
+DIRECTORY
+.
+├── css
+│   └── style.css
+├── fonts
+│   └── Poppins-Bold.ttf
+├── icons
+│   ├── ICON-48.png
+│   └── sword.svg
+├── js
+│   ├── header.js
+│   ├── mouse.js
+│   └── quotes.js
+├── index.html
+├── LICENSE
+├── manifest.json
+└── README.md
+
+##
+javascripts
+    mouse.js::Is used to capture mouse
+    header.js and qoutes.js::Used to add header above search bar and qoutes along side 
