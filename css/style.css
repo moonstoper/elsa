@@ -74,11 +74,14 @@ body {
 
 .nav_item:hover .list {
     display:flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-end;
     color: black;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     height: inherit;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    
     
 }
 .nav_item:hover .cursor{
@@ -87,10 +90,43 @@ body {
 }
 
 .list a{
-    flex: 0 0 33.33%;
-    max-width: 5rem;
-    overflow: hidden;
+    max-width: 10rem;
+    overflow-wrap: break-word;
+    z-index: 2;
 
+}
+.list a::before{
+    display:none;
+    overflow:visible;
+    transition:all 5s ease forwards;
+    color:none;
+    z-index: -1;
+    
+}
+a:hover::before{
+    content: '';
+    display: block;
+    position:absolute;
+    overflow:hidden;
+    width: 3rem;
+    height: 1rem;
+    background-size: 50% auto;
+    background-color:yellow;
+    float: right;
+    transform: skew(-20deg);
+}
+
+@keyframes animate{
+    0%{
+        width: 0rem;
+    }
+
+    50%{
+        width:5rem;
+    }
+    100%{
+        width: 3rem;
+    }
 }
 
 .section-quotes {
@@ -206,6 +242,18 @@ form .btn {
     text-shadow: 0px 0px 0px transparent;
     cursor: none;
     padding: .7rem;
+    border: solid;
+    border-width: .3rem .3rem 0rem 0rem;
+    border-color:blue;
+}
+.btn:active{
+    box-shadow: 0px 0px 0px transparent;
+    
+    text-shadow: 0px 0px 0px transparent;
+    cursor: none;
+    padding: .7rem;
+    border: solid;
+    border-width: .3rem .3rem 0rem 0rem;
     border-color:blue;
 }
 .btn:hover .cursor{
@@ -225,4 +273,12 @@ input:focus {
 a:hover .cursor{
     height: 10rem !important;
     
+}
+
+.sword{
+    color:white;
+    height: 6rem;
+    width: 6rem;
+    padding:0rem 1rem 0rem 1rem;
+    align-self: center;
 }
