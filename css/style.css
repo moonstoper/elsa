@@ -89,11 +89,12 @@ body {
     width: 4vh;
 }
 
-.list a{
+.list a {
     max-width: 10rem;
     overflow-wrap: break-word;
     z-index: 2;
-
+    color: inherit;
+    text-decoration: none;
 }
 .list a::before{
     display:none;
@@ -281,4 +282,13 @@ a:hover .cursor{
     width: 6rem;
     padding:0rem 1rem 0rem 1rem;
     align-self: center;
+}
+
+a:link{
+    color:inherit;
+    text-decoration: none;
+}
+a:visited{
+    color:inherit;
+    text-decoration: none;
 }

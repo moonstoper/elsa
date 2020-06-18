@@ -5,6 +5,7 @@
     ███████╗███████╗███████║██║  ██║
     ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
 # #
+DARK-MINIMAL
 HOMEPAGE / STARTPAGE DESIGN FOR ANY BROWSER
 # #
 catch phrase:tomoon

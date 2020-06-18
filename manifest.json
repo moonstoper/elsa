@@ -1,0 +1,16 @@
+{
+    "name":"Elsa - Dark Minimal HomePage",
+    "version":"1.0.0",
+    "description":"Custom minimal style startup/homepage for browser",
+    "manifest_version":2,
+    "chrome_settings_overrides":{
+        "homepage":"index.html"
+
+    },
+    "icons":{
+        "48":"icons/ICON-48.png"
+    },
+    "chrome_url_overrides":{
+        "new_tab":"index.html"
+    }
+}
