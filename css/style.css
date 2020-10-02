@@ -24,8 +24,20 @@ body {
     transform: translate(-50%,-50%);
     transition-duration: .2s;
     transition-timing-function: ease-out;
+    animation: cursorAnimation .5s infinite alternate;
     
 }
+
+
+@keyframes cursorAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
 
 @font-face {
     font-family: Poppins;
